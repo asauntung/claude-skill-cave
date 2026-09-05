@@ -1,12 +1,12 @@
 # cave — mode caveman untuk Claude
 
-Skill yang memaksa Claude menjawab dalam gaya caveman: padat dan tanpa basa-basi. Tujuannya menghemat token supaya limit percakapan tidak cepat habis.
+Skill yang memaksa Claude menjawab dalam gaya caveman: padat dan tanpa basa-basi. Tujuannya menghemat token supaya limit percakapan tidak cepat habis. Berjalan di claude.ai, Claude Desktop, dan Claude Code.
 
 > **English:** A Claude Agent Skill that forces Claude to answer in caveman style: dense, no small talk. The point is to spend fewer tokens so your conversation limit lasts longer. Works in claude.ai, Claude Desktop, and Claude Code.
 
 ## Kenapa dipakai
 
-Sebagian besar token output habis untuk hal yang tidak Anda butuhkan: banyak pengantar, sering mengulang pertanyaan, kalimat penutup yang menawarkan bantuan lanjutan, dan jargon-jargon. Skill ini memangkas semuanya, namun dan menyisakan isi.
+Sebagian besar token output habis untuk hal yang tidak Anda butuhkan: banyak pengantar, sering mengulang pertanyaan, kalimat penutup yang menawarkan bantuan lanjutan, dan jargon-jargon. Skill ini memangkas semuanya dan menyisakan isi.
 
 Contoh perbedaannya:
 
@@ -20,7 +20,7 @@ Contoh perbedaannya:
 
 ## Yang tetap
 
-Kompresi hanya menyentuh gaya bahasa saja tanpa menyentuh isi. Sementara fakta, angka, kode, dan teks error tetap ditulis persis. Skill juga otomatis keluar dari gaya caveman untuk peringatan keselamatan, tindakan yang tidak bisa dibatalkan, dan langkah yang bisa salah kalau dijelaskan setengah-setengah. Setelah ia akan kembali ke mode cave.
+Kompresi hanya menyentuh gaya bahasa saja tanpa menyentuh isi. Fakta, angka, kode, dan teks error tetap ditulis persis. Skill juga otomatis keluar dari gaya caveman untuk peringatan keselamatan, tindakan yang tidak bisa dibatalkan, dan langkah yang bisa salah kalau dijelaskan setengah-setengah. Setelah itu ia akan kembali ke mode cave.
 
 ## Instalasi
 
@@ -71,7 +71,7 @@ Ada tiga level: `lite`, `full`, `ultra`. Default `full`. Level hanya berubah kal
     └── SKILL.md   # seluruh isi skill
 ```
 
-Seluruh skill ada di satu file. Silakan baca dulu sebelum dipasang, isinya cuma 30-an baris saja
+Seluruh skill ada di satu file. Silakan baca dulu sebelum dipasang, isinya cuma 30-an baris saja.
 
 ## Lisensi
 

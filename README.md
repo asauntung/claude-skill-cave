@@ -1,12 +1,12 @@
 # cave — mode caveman untuk Claude
 
-Skill yang memaksa Claude menjawab dalam gaya caveman: padat, tanpa basa-basi, tanpa hedging. Tujuannya sederhana, menghemat token supaya limit percakapan tidak cepat habis.
+Skill yang memaksa Claude menjawab dalam gaya caveman: padat dan tanpa basa-basi. Tujuannya menghemat token supaya limit percakapan tidak cepat habis.
 
-> **English:** A Claude Agent Skill that switches Claude into "caveman mode" — compressed, filler-free answers. Fewer output tokens, longer usage before hitting limits. Works in claude.ai, Claude Desktop, and Claude Code.
+> **English:** A Claude Agent Skill that forces Claude to answer in caveman style: dense, no small talk. The point is to spend fewer tokens so your conversation limit lasts longer. Works in claude.ai, Claude Desktop, and Claude Code.
 
 ## Kenapa dipakai
 
-Sebagian besar token output habis untuk hal yang tidak Anda butuhkan: pengantar, pengulangan pertanyaan, kalimat penutup yang menawarkan bantuan lanjutan, dan pagar-pagar kalimat. Skill ini memangkas semuanya dan menyisakan isi.
+Sebagian besar token output habis untuk hal yang tidak Anda butuhkan: banyak pengantar, sering mengulang pertanyaan, kalimat penutup yang menawarkan bantuan lanjutan, dan jargon-jargon. Skill ini memangkas semuanya, namun dan menyisakan isi.
 
 Contoh perbedaannya:
 
@@ -18,9 +18,9 @@ Contoh perbedaannya:
 
 > Query lambat karena full table scan. Tambah indeks di kolom `user_id`. Trade-off: insert jadi sedikit lebih lambat.
 
-## Yang tetap utuh
+## Yang tetap
 
-Kompresi hanya menyentuh gaya bahasa, bukan isi. Fakta, angka, kode, dan teks error tetap ditulis persis. Skill juga otomatis keluar dari gaya caveman untuk peringatan keselamatan, tindakan yang tidak bisa dibatalkan, dan langkah yang bisa salah kalau dijelaskan setengah-setengah. Setelah itu kembali ke mode cave.
+Kompresi hanya menyentuh gaya bahasa saja tanpa menyentuh isi. Sementara fakta, angka, kode, dan teks error tetap ditulis persis. Skill juga otomatis keluar dari gaya caveman untuk peringatan keselamatan, tindakan yang tidak bisa dibatalkan, dan langkah yang bisa salah kalau dijelaskan setengah-setengah. Setelah ia akan kembali ke mode cave.
 
 ## Instalasi
 
@@ -71,8 +71,8 @@ Ada tiga level: `lite`, `full`, `ultra`. Default `full`. Level hanya berubah kal
     └── SKILL.md   # seluruh isi skill
 ```
 
-Seluruh skill ada di satu file. Silakan baca dulu sebelum dipasang, isinya cuma 30-an baris.
+Seluruh skill ada di satu file. Silakan baca dulu sebelum dipasang, isinya cuma 30-an baris saja
 
 ## Lisensi
 
-MIT. Bebas dipakai, dimodifikasi, dan disebarkan. Kalau Anda bikin turunan yang lebih bagus, kabari lewat issue, senang lihatnya.
+MIT. Bebas dipakai, dimodifikasi, dan disebarkan. Kalau Anda bikin turunan yang lebih bagus, kabari lewat issue, ya.

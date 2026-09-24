@@ -20,7 +20,9 @@ Contoh perbedaannya:
 
 ## Yang tetap
 
-Kompresi hanya menyentuh gaya bahasa saja tanpa menyentuh isi. Fakta, angka, kode, dan teks error tetap ditulis persis. Skill juga otomatis keluar dari gaya caveman untuk peringatan keselamatan, tindakan yang tidak bisa dibatalkan, dan langkah yang bisa salah kalau dijelaskan setengah-setengah. Setelah itu ia akan kembali ke mode cave.
+Kompresi hanya menyentuh gaya bahasa saja tanpa menyentuh isi. Fakta, angka, kode, dan teks error tetap ditulis persis. Hasil kerja seperti kode, komentar kode, commit message, file, dan dokumen tetap ditulis normal, karena mode ini hanya mengatur pesan Claude kepada Anda.
+
+Skill juga otomatis keluar dari gaya caveman untuk peringatan keselamatan, tindakan yang tidak bisa dibatalkan, dan langkah yang bisa salah kalau dijelaskan setengah-setengah. Setelah itu ia akan kembali ke mode cave. Di Claude Code dan Cowork, laporan akhir setelah kerja panjang ditulis dalam kalimat utuh supaya tetap mudah dipahami.
 
 ## Instalasi
 
@@ -51,7 +53,9 @@ ln -s "$(pwd)/claude-skill-cave/cave" ~/.claude/skills/cave
 
 Ketik salah satu pemicu, mode langsung aktif tanpa konfirmasi:
 
-`caveman mode` · `cave mode` · `/cave` · `jawab singkat` · `singkat saja` · `ringkas` · `hemat token` · `be brief` · `fewer tokens`
+`caveman mode` · `cave mode` · `/cave` · `mode caveman` · `hemat token` · `kurangi token` · `jawab singkat terus` · `fewer tokens` · `save tokens`
+
+Permintaan sekali pakai seperti "ringkas artikel ini" atau "summarize this" sengaja tidak memicu mode, karena itu tugas biasa, bukan permintaan gaya jawab permanen.
 
 Mematikannya: `stop caveman`, `normal mode`, atau `mode normal`.
 
@@ -59,7 +63,13 @@ Bahasa mengikuti Anda. Kalau Anda menulis bahasa Indonesia, jawabannya caveman b
 
 ### Level
 
-Ada tiga level: `lite`, `full`, `ultra`. Default `full`. Level hanya berubah kalau Anda menyebutnya sendiri, misalnya `cave ultra`.
+| Level | Gaya |
+|---|---|
+| `lite` | Kalimat utuh dan wajar, semua basa-basi dibuang. |
+| `full` (default) | Kalimat pendek, fragmen boleh, kata sambung dibuang selama makna utuh. |
+| `ultra` | Minimal: kata kunci, fragmen, simbol seperti `->`, satu baris kalau cukup. |
+
+Level hanya berubah kalau Anda menyebutnya sendiri, misalnya `cave ultra`.
 
 ## Struktur repo
 
@@ -71,7 +81,7 @@ Ada tiga level: `lite`, `full`, `ultra`. Default `full`. Level hanya berubah kal
     └── SKILL.md   # seluruh isi skill
 ```
 
-Seluruh skill ada di satu file. Silakan baca dulu sebelum dipasang, isinya cuma 30-an baris saja.
+Seluruh skill ada di satu file. Silakan baca dulu sebelum dipasang, isinya kurang dari 100 baris, termasuk empat contoh jawaban.
 
 ## Lisensi
 
